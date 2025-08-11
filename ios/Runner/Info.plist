@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Medhealthplus</string>
+	<string>MedHealthPlus</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -45,5 +45,23 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	
+	<!-- Location permissions -->
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This app needs location access to find nearby labs and diagnostic centers.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>This app needs location access to find nearby labs and diagnostic centers.</string>
+	
+	<!-- Camera permissions -->
+	<key>NSCameraUsageDescription</key>
+	<string>This app needs camera access to upload documents and reports.</string>
+	
+	<!-- Photo library permissions -->
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This app needs photo library access to upload documents and reports.</string>
+	
+	<!-- Microphone permissions -->
+	<key>NSMicrophoneUsageDescription</key>
+	<string>This app needs microphone access for voice features.</string>
 </dict>
 </plist>
