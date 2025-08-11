@@ -85,7 +85,7 @@ class _BookingCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final controller = Get.find<BookingController>();
-    
+
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
@@ -120,7 +120,8 @@ class _BookingCard extends StatelessWidget {
                   vertical: 4,
                 ),
                 decoration: BoxDecoration(
-                  color: _getStatusColor(booking.bookingStatus).withOpacity(0.1),
+                  color:
+                      _getStatusColor(booking.bookingStatus).withOpacity(0.1),
                   borderRadius: BorderRadius.circular(6),
                 ),
                 child: Text(
@@ -172,16 +173,14 @@ class _BookingCard extends StatelessWidget {
           Row(
             children: [
               Icon(
-                booking.paymentMethod == 'online' 
-                    ? Icons.payment 
-                    : Icons.money,
+                booking.paymentMethod == 'online' ? Icons.payment : Icons.money,
                 size: 16,
                 color: Colors.grey[600],
               ),
               const SizedBox(width: 8),
               Text(
-                booking.paymentMethod == 'online' 
-                    ? 'Paid Online' 
+                booking.paymentMethod == 'online'
+                    ? 'Paid Online'
                     : 'Pay at Center',
                 style: TextStyle(
                   color: Colors.grey[600],
@@ -221,7 +220,7 @@ class _BookingCard extends StatelessWidget {
                   ),
                 ),
               ] else if (booking.bookingStatus == 'completed') ...[
-                Expanded(
+                const Expanded(
                   child: CustomButton(
                     text: 'Report Pending',
                     isOutlined: true,
@@ -254,15 +253,15 @@ class _BookingCard extends StatelessWidget {
   void _showCancelDialog(BuildContext context, BookingController controller) {
     showDialog(
       context: context,
-      builder: (context) => AlertDialog(
-        title: const Text('Cancel Booking'),
-        content: const Text('Are you sure you want to cancel this booking?'),
+      builder: (context) => const AlertDialog(
+        title: Text('Cancel Booking'),
+        content: Text('Are you sure you want to cancel this booking?'),
         actions: [
-          const TextButton(
+          TextButton(
             onPressed: null,
             child: Text('No'),
           ),
-          const TextButton(
+          TextButton(
             onPressed: null,
             child: Text('Yes, Cancel'),
           ),

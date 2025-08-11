@@ -32,40 +32,40 @@ class SettingsView extends StatelessWidget {
             subtitle: 'Update your account password',
             onTap: () => Get.toNamed('/change-password'),
           ),
-          
+
           const SizedBox(height: 24),
-          
+
           // App Settings
           _buildSectionHeader('App Settings'),
           Obx(() => _buildSettingsTile(
-            icon: Icons.language,
-            title: 'Language',
-            subtitle: controller.selectedLanguage == 'en' ? 'English' : 'हिंदी',
-            onTap: () => _showLanguageDialog(context, controller),
-          )),
+                icon: Icons.language,
+                title: 'Language',
+                subtitle:
+                    controller.selectedLanguage == 'en' ? 'English' : 'हिंदी',
+                onTap: () => _showLanguageDialog(context, controller),
+              )),
           Obx(() => _buildSettingsTile(
-            icon: Icons.notifications,
-            title: 'Notifications',
-            subtitle: controller.notificationsEnabled 
-                ? 'Enabled' 
-                : 'Disabled',
-            trailing: Switch(
-              value: controller.notificationsEnabled,
-              onChanged: controller.toggleNotifications,
-            ),
-          )),
+                icon: Icons.notifications,
+                title: 'Notifications',
+                subtitle:
+                    controller.notificationsEnabled ? 'Enabled' : 'Disabled',
+                trailing: Switch(
+                  value: controller.notificationsEnabled,
+                  onChanged: controller.toggleNotifications,
+                ),
+              )),
           _buildSettingsTile(
             icon: Icons.dark_mode,
             title: 'Dark Mode',
             subtitle: 'Coming soon',
-            trailing: Switch(
+            trailing: const Switch(
               value: false,
               onChanged: null,
             ),
           ),
-          
+
           const SizedBox(height: 24),
-          
+
           // Support
           _buildSectionHeader('Support'),
           _buildSettingsTile(
@@ -86,9 +86,9 @@ class SettingsView extends StatelessWidget {
             subtitle: 'Rate us on the app store',
             onTap: () => _rateApp(),
           ),
-          
+
           const SizedBox(height: 24),
-          
+
           // Legal
           _buildSectionHeader('Legal'),
           _buildSettingsTile(
@@ -107,9 +107,9 @@ class SettingsView extends StatelessWidget {
             subtitle: 'Version 1.0.0',
             onTap: () => Get.toNamed('/about'),
           ),
-          
+
           const SizedBox(height: 32),
-          
+
           // Danger Zone
           _buildSectionHeader('Danger Zone', color: Colors.red),
           _buildSettingsTile(
@@ -214,7 +214,7 @@ class SettingsView extends StatelessWidget {
 
   void _showFeedbackDialog(BuildContext context) {
     final feedbackController = TextEditingController();
-    
+
     showDialog(
       context: context,
       builder: (context) => AlertDialog(

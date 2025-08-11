@@ -44,39 +44,40 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyC7wWai6Te6KaJ2PZqDjhafUODhyBZWc6M',
-    appId: '1:448618578101:web:0b650370bb29e29cac3efc',
-    messagingSenderId: '448618578101',
-    projectId: 'medhealthplus-demo',
-    authDomain: 'medhealthplus-demo.firebaseapp.com',
-    storageBucket: 'medhealthplus-demo.appspot.com',
+    apiKey: 'AIzaSyAcm5jKq8M7BthRXsYjTebhuYz8mh3Ipwo',
+    appId: '1:153729404704:web:983b5f0fea50ac16a45145',
+    messagingSenderId: '153729404704',
+    projectId: 'medhealthplus-87b99',
+    authDomain: 'medhealthplus-87b99.firebaseapp.com',
+    storageBucket: 'medhealthplus-87b99.firebasestorage.app',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBdVl-cTICSwYKrZ-j0U_m5Nb2-TgH_Gg8',
-    appId: '1:448618578101:android:aa79a932fbeeaac3efc',
-    messagingSenderId: '448618578101',
-    projectId: 'medhealthplus-demo',
-    storageBucket: 'medhealthplus-demo.appspot.com',
+    apiKey: 'AIzaSyAcm5jKq8M7BthRXsYjTebhuYz8mh3Ipwo',
+    appId: '1:153729404704:android:983b5f0fea50ac16a45145',
+    messagingSenderId: '153729404704',
+    projectId: 'medhealthplus-87b99',
+    authDomain: 'medhealthplus-87b99.firebaseapp.com',
+    storageBucket: 'medhealthplus-87b99.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyC7wWai6Te6KaJ2PZqDjhafUODhyBZWc6M',
-    appId: '1:448618578101:ios:34495e439240329cac3efc',
-    messagingSenderId: '448618578101',
-    projectId: 'medhealthplus-demo',
-    storageBucket: 'medhealthplus-demo.appspot.com',
-    iosClientId: '448618578101-2lgvejrq9j8376694b6hvgf70j58nip2.apps.googleusercontent.com',
+    apiKey: 'AIzaSyCGrQPVRHk0aruz1vRFVJcToFmDIjUsztc',
+    appId: '1:153729404704:ios:9a787471098041f0a45145',
+    messagingSenderId: '153729404704',
+    projectId: 'medhealthplus-87b99',
+    authDomain: 'medhealthplus-87b99.firebaseapp.com',
+    storageBucket: 'medhealthplus-87b99.firebasestorage.app',
     iosBundleId: 'com.example.medhealthplus',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyC7wWai6Te6KaJ2PZqDjhafUODhyBZWc6M',
-    appId: '1:448618578101:ios:34495e439240329cac3efc',
-    messagingSenderId: '448618578101',
-    projectId: 'medhealthplus-demo',
-    storageBucket: 'medhealthplus-demo.appspot.com',
-    iosClientId: '448618578101-2lgvejrq9j8376694b6hvgf70j58nip2.apps.googleusercontent.com',
+    apiKey: 'AIzaSyCGrQPVRHk0aruz1vRFVJcToFmDIjUsztc',
+    appId: '1:153729404704:ios:9a787471098041f0a45145',
+    messagingSenderId: '153729404704',
+    projectId: 'medhealthplus-87b99',
+    authDomain: 'medhealthplus-87b99.firebaseapp.com',
+    storageBucket: 'medhealthplus-87b99.firebasestorage.app',
     iosBundleId: 'com.example.medhealthplus',
   );
 }
